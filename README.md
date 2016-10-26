@@ -1,6 +1,6 @@
 # seed-table [![npm version](https://badge.fury.io/js/seed-table.svg)](https://badge.fury.io/js/seed-table)
 
-table component pack for [Seed](https://github.com/helpscout/seed)!
+Table component pack for [Seed](https://github.com/helpscout/seed)!
 
 ## Install
 ```
@@ -40,5 +40,18 @@ Once that is setup, simply `@import` *seed-table* as needed in your `.scss` file
 The following variables can be found in `_config.scss`
 
 ```scss
-seed-table config options
+// Namespaces
+$seed-table-namespace: c-table !default;
+
+// Configs
+$seed-table-background-color-hover: #F1F3F5 !default;
+$seed-table-background-color-striped: #F9FAFA !default;
+$seed-table-border-color: #E3E8EB !default;
+$seed-table-border-width: 1px !default;
+
+$seed-table-padding-sizes: (
+  md: 12px,
+  sm: 8px,
+  xs: 4px
+) !default;
 ```
