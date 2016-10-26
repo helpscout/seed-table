@@ -15,7 +15,7 @@
   thead {
     th,
     td {
-      border-bottom-width: ceil(2 * $seed-table-border-width);
+      border-bottom-width: $seed-table-th-border-width;
     }
   }
 }
