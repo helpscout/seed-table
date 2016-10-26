@@ -11,13 +11,18 @@
     "test": "npm run build",
     "prepublish": "npm run test"
   },
-  "homepage": "",
+  "homepage": "https://github.com/helpscout/seed-table/",
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "git+https://github.com/helpscout/seed-table.git"
   },
-  "authors": [],
+  "authors": [
+    "ItsJonQ <itsjonq@gmail.com>"
+  ],
   "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/helpscout/seed-table/issues"
+  },
   "keywords": [
     "bem",
     "css",
@@ -29,7 +34,8 @@
     "performance",
     "seed",
     "seed-pack",
-    "scss"
+    "scss",
+    "table"
   ],
   "engines": {
     "node": ">=4"
