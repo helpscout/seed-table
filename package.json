@@ -1,12 +1,13 @@
 {
   "name": "seed-table",
-  "version": "0.0.1",
-  "description": "table component pack for Seed",
+  "version": "0.0.0",
+  "description": "Table component pack for Seed",
   "main": "index.js",
   "scripts": {
     "banner": "node ./scripts/banner.js",
-    "build": "npm run build:main && npm run banner",
+    "build": "npm run build:main && npm run banner && npm run copy",
     "build:main": "node ./scripts/build.js",
+    "copy": "cp ./dist/*.css ./example/dist/",
     "test": "npm run build",
     "prepublish": "npm run test"
   },
@@ -15,8 +16,7 @@
     "type": "git",
     "url": ""
   },
-  "authors": [
-  ],
+  "authors": [],
   "license": "MIT",
   "keywords": [
     "bem",
@@ -37,5 +37,10 @@
   "devDependencies": {
     "mkdirp": "^0.5.1",
     "node-sass": "^3.10.0"
+  },
+  "dependencies": {
+    "seed-dash": "0.0.1",
+    "seed-states": "0.0.4",
+    "seed-this": "0.0.4"
   }
 }

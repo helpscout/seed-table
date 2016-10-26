@@ -8,7 +8,9 @@ var sass = require('node-sass');
 
 var file = pkg.name;
 var includePaths = pathfinder(
-  // Add files/paths to include
+  require('seed-dash'),
+  require('seed-states'),
+  require('seed-this')
 );
 
 // Default .css compile
