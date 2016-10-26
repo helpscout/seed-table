@@ -20,6 +20,10 @@
   }
 }
 
+&--fixed {
+  table-layout: fixed;
+}
+
 &--striped {
   tbody tr:nth-of-type(odd) {
     background-color: $seed-table-background-color-striped;

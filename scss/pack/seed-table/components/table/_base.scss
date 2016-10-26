@@ -17,6 +17,11 @@
     box-sizing: border-box;
   }
 
+  & {
+    max-width: 100%;
+    width: 100%;
+  }
+
   thead {
     th {
       border-bottom: ceil(2 * $seed-table-border-width) solid $seed-table-border-color;
