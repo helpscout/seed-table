@@ -30,6 +30,18 @@
 .c-table tbody + tbody {
   border-bottom: 2px solid #E3E8EB; }
 
+.c-table--top th,
+.c-table--top td {
+  vertical-align: top; }
+
+.c-table--middle th,
+.c-table--middle td {
+  vertical-align: middle; }
+
+.c-table--bottom th,
+.c-table--bottom td {
+  vertical-align: bottom; }
+
 .c-table--sm th,
 .c-table--sm td {
   padding: 8px; }
