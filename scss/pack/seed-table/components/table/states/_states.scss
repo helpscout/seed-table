@@ -2,26 +2,29 @@
 
 // Dependencies
 @import "pack/seed-dash/_index";
+@import "pack/seed-publish/_index";
 @import "pack/seed-states/config";
 @import "pack/seed-this/_index";
 @import "../../../config";
 
-@each $state, $props in $seed-states-colors {
-  $color: _get($props, background-color);
-  $table: this();
+@include export(seed-table) {
+  @each $state, $props in $seed-states-colors {
+    $color: _get($props, background-color);
+    $table: this();
 
-  th.is-#{$state},
-  tr.is-#{$state},
-  td.is-#{$state} {
-    background-color: $color;
-  }
-
-  @at-root #{$table}--hover {
     th.is-#{$state},
     tr.is-#{$state},
     td.is-#{$state} {
-      &:hover {
-        background-color: darken($color, 2);
+      background-color: $color;
+    }
+
+    @at-root #{$table}--hover {
+      th.is-#{$state},
+      tr.is-#{$state},
+      td.is-#{$state} {
+        &:hover {
+          background-color: darken($color, 2);
+        }
       }
     }
   }
