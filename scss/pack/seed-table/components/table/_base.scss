@@ -20,19 +20,23 @@
     }
 
     & {
+      border-collapse: collapse;
       max-width: 100%;
       width: 100%;
     }
 
     thead {
       th {
+        border-top: none;
         border-bottom: $seed-table-th-border-width solid $seed-table-border-color;
         vertical-align: bottom;
       }
     }
 
     th {
+      border-top: $seed-table-border-width solid $seed-table-border-color;
       padding: _get($seed-table-padding-sizes, md);
+      text-align: left;
     }
 
     td {

@@ -1,5 +1,5 @@
 /**
- * seed-table v0.0.2 (https://github.com/helpscout/seed-table/)
+ * seed-table v0.0.3 (https://github.com/helpscout/seed-table/)
  * Table component pack for Seed
  * Licensed under MIT
  */
@@ -15,15 +15,19 @@
   box-sizing: border-box; }
 
 .c-table {
+  border-collapse: collapse;
   max-width: 100%;
   width: 100%; }
 
 .c-table thead th {
+  border-top: none;
   border-bottom: 1px solid #E3E8EB;
   vertical-align: bottom; }
 
 .c-table th {
-  padding: 12px; }
+  border-top: 1px solid #E3E8EB;
+  padding: 12px;
+  text-align: left; }
 
 .c-table td {
   border-top: 1px solid #E3E8EB;
